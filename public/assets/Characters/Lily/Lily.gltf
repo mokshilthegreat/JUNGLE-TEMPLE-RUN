@@ -1,0 +1,82 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "JungleTempleRunnerCharacterExporter"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Lily_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Lily_SkeletalMesh",
+      "mesh": 0
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Lily_Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1
+          },
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "Lily_Material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.75,
+          0.22,
+          0.17,
+          1.0
+        ],
+        "metallicFactor": 0.1,
+        "roughnessFactor": 0.6
+      }
+    }
+  ],
+  "animations": [
+    {
+      "name": "Idle",
+      "channels": [],
+      "samplers": []
+    },
+    {
+      "name": "Run",
+      "channels": [],
+      "samplers": []
+    },
+    {
+      "name": "Jump",
+      "channels": [],
+      "samplers": []
+    },
+    {
+      "name": "Slide",
+      "channels": [],
+      "samplers": []
+    },
+    {
+      "name": "Hit",
+      "channels": [],
+      "samplers": []
+    },
+    {
+      "name": "Death",
+      "channels": [],
+      "samplers": []
+    }
+  ]
+}

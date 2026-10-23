@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #0a0a14;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: white;
+}
+
+/* Game-specific styles */
+.game-glow { text-shadow: 0 0 10px currentColor, 0 0 20px currentColor; }
+.game-panel { background: rgba(10, 14, 26, 0.9); border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 8px; }
+.cyber-text { font-family: 'Courier New', monospace; }
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+.animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+
+@keyframes float-up {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-60px); opacity: 0; }
+}
+.animate-float-up { animation: float-up 1.5s ease-out forwards; }
+
+@keyframes scan-line {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.scrollbar-thin::-webkit-scrollbar { width: 6px; }
+.scrollbar-thin::-webkit-scrollbar-track { background: rgba(0,0,0,0.3); }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: rgba(0, 212, 255, 0.3); border-radius: 3px; }
